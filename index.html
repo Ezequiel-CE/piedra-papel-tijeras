@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra-Papel-Tijeras</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="selections">
+        <button data-selection="piedra" class="selection">✊</button>
+        <button data-selection="papel" class="selection">✋</button>
+        <button data-selection="tijera" class="selection">✌</button>
+      </div>
+      <div class="information">
+        <button class="enemy">❔</button>
+        <div class="score">
+          <h2 class="score-title">Resultado</h2>
+          <div class="score-container">
+            <!-- <h1 class="win-screen">You win</h1> -->
+            <h3>Tu : <span class="user-score">0</span></h3>
+            <h3>Oponente:<span class="enemy-score">0</span></h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>

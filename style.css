@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: gray;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.selections {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.selection {
+  font-size: 5rem;
+  background: none;
+  border: none;
+  outline: none;
+  transition: 200ms;
+}
+.selection:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.information {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.enemy {
+  font-size: 10rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.score-title {
+  margin-bottom: 10px;
+}
+
+.win-screen {
+  font-size: 3rem;
+  color: rgb(22, 245, 14);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+}
+
+.lose-screen {
+  font-size: 3rem;
+  color: red;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+}
