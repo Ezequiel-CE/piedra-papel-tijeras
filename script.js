@@ -1,6 +1,6 @@
 "use strict";
 
-//// selectors
+///////////////////////////////////////////////////////////// selectors
 
 const options = document.querySelectorAll("[data-selection]");
 const enemy = document.querySelector(".enemy");
@@ -16,7 +16,7 @@ const gameOptions = [
 
 const scores = { player: 1, enemy: 1 };
 
-///////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////// functions
 
 //selecciona
 
@@ -42,6 +42,8 @@ const UpdateScore = function (playerW, enemyW) {
   if (playerW) userScore.textContent = scores.player++;
   if (enemyW) enemyScore.textContent = scores.enemy++;
 };
+
+// actualiza la interfaz con el ganador
 
 const loseOrWin = function (scores) {
   const result = document.createElement("h1");
